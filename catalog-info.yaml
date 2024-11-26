@@ -1,0 +1,8 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: spec-viacep-teste-location
+  description: Location to import all spec-viacep-teste catalog components
+spec:
+  targets:
+    - ./.platform/*.yaml

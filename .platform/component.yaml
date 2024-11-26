@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "spec-viacep-teste"
+  description: "Artifacts generator via Spec."
+  annotations:
+    github.com/project-slug: sjflausino/spec-viacep-teste
+    backstage.io/techdocs-ref: dir:..
+    github.com/workflows: publish.yml,remove.yml
+    kong-manager/service-name: app.spec-viacep-teste.80
+    kong-manager/instance: cluster-vkdr-local   
+spec:
+  type: devops
+  lifecycle: experimental
+  owner: "group:default/admin"
+  providesApis:
+    - spec-viacep-teste
